@@ -176,6 +176,7 @@ h2
 	.roboto {
 		font: 1.5rem $roboto;
 		color: #999999;
+		text-align: center;
 	}
 	.img-small {
 		height: 250px;
@@ -225,6 +226,10 @@ h2
 	}
 	.mB-90 {
 		margin-bottom: -90px;
+	}
+	.grey-2 {
+		background-image: url("../img/grey2.png");
+		background-size: cover;
 	}
 // style warunkowe - nadaje odpowiedni padding na szerokim ekranie
 @media(min-width: 1100px)

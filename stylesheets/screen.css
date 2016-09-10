@@ -180,27 +180,28 @@ h2 {
 .roboto {
   font: 1.5rem Roboto, sans-serif;
   color: #999999;
+  text-align: center;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .img-small {
   height: 250px;
   width: calc(33.333% - 20px);
   margin-top: 100px;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .img-small:first-child {
   background-image: url("../img/img-1.jpg");
   margin-right: 20px;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .img-small:nth-of-type(2) {
   background-image: url("../img/img-2.jpg");
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .img-small:last-child {
   background-image: url("../img/img-3.jpg");
   background-size: cover;
@@ -210,13 +211,13 @@ h2 {
   padding-top: 50px;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .numbers {
   background-color: #95e1d3;
   margin-top: 50px;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .bigger-number {
   color: white;
   font: bold 5rem Montserrat, sans-serif;
@@ -224,7 +225,7 @@ h2 {
   text-align: center;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .sub-bigger-number {
   color: white;
   font: 1.4rem Montserrat, sans-serif;
@@ -232,32 +233,38 @@ h2 {
   padding-bottom: 50px;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .grey {
   background-image: url("../img/grey.jpg");
   background-size: cover;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .img-center {
   margin: 0 auto;
   display: block;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .mB-90 {
   margin-bottom: -90px;
 }
 
+/* line 230, ../sass/screen.scss */
+.grey-2 {
+  background-image: url("../img/grey2.png");
+  background-size: cover;
+}
+
 @media (min-width: 1100px) {
-  /* line 232, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .container-fluid {
     padding-right: 100px;
     padding-left: 100px;
   }
 }
 @media (max-width: 960px) {
-  /* line 239, ../sass/screen.scss */
+  /* line 244, ../sass/screen.scss */
   .img-small {
     margin-left: auto;
     margin-right: auto;
@@ -266,12 +273,12 @@ h2 {
     float: none;
   }
 
-  /* line 247, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   .img-small:first-child {
     margin-right: auto;
   }
 
-  /* line 251, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   .img-small:last-child {
     margin-left: auto;
   }
