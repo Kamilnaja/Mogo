@@ -179,16 +179,20 @@ h2
 		text-align: center;
 	}
 	.img-small {
-		height: 250px;
-		width: calc(33.333% - 20px);
+		height: 280px;
+		background-repeat: no-repeat;
 		margin-top: 100px;
 	}
 	.img-small:first-child {
 		background-image: url("../img/img-1.jpg");
+		background-size: cover;
 		margin-right: 20px;
+
 	}
 	.img-small:nth-of-type(2) {
 		background-image: url("../img/img-2.jpg");
+		background-size: cover;
+
 
 	}
 	.img-small:last-child {
@@ -239,6 +243,9 @@ h2
         padding-right: 100px;
         padding-left: 100px;
     }
+	.img-small {
+		width: calc(33.333% - 20px);
+	}
 }
 @media(max-width: 960px){
 	.img-small {
