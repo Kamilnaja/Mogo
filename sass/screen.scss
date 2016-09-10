@@ -1,6 +1,7 @@
 
 $kaushan: 'Kaushan Script', italic;
 $mont: Montserrat, sans-serif;
+$roboto: Roboto, sans-serif;
 body
 {
     font-size: 62.5%;
@@ -148,8 +149,83 @@ h2
     }
 }
 .what-we-do {
-	padding-top: 90px;
+	text-align: center;
+
 }
+	.h2-italic {
+		font: 2.4rem $kaushan;
+		text-align: center;
+		margin-top: 90px;
+	}
+	.h3-bold {
+		font: bold 3.0rem $mont;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.red-line {
+    width: 7%;
+    height: 3px;
+
+    color: salmon;
+    border: 0 none;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: salmon;
+	}
+	.roboto {
+		font: 1.5rem $roboto;
+		color: #999999;
+	}
+	.img-small {
+		height: 250px;
+		width: calc(33.333% - 20px);
+		margin-top: 100px;
+	}
+	.img-small:first-child {
+		background-image: url("../img/img-1.jpg");
+		margin-right: 20px;
+	}
+	.img-small:nth-of-type(2) {
+		background-image: url("../img/img-2.jpg");
+
+	}
+	.img-small:last-child {
+		background-image: url("../img/img-3.jpg");
+		background-size: cover;
+		margin-left: 20px;
+		color: white;
+		font: bold 1.8rem $mont;
+		padding-top: 50px;
+
+	}
+	.numbers {
+		background-color: #95e1d3;
+		margin-top: 50px;
+	}
+	.bigger-number {
+		color: white;
+		font: bold 5.0rem $mont;
+		padding-top: 50px;
+		text-align: center;
+	}
+	.sub-bigger-number {
+		color: white;
+		font: 1.4rem $mont;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.grey {
+		background-image: url("../img/grey.jpg");
+		background-size: cover;
+	}
+	.img-center {
+		margin: 0 auto;
+		display: block;
+	}
+	.mB-90 {
+		margin-bottom: -90px;
+	}
 // style warunkowe - nadaje odpowiedni padding na szerokim ekranie
 @media(min-width: 1100px)
 {
@@ -158,4 +234,21 @@ h2
         padding-right: 100px;
         padding-left: 100px;
     }
+}
+@media(max-width: 960px){
+	.img-small {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		display: block;
+		float: none;
+
+	}
+		.img-small:first-child {
+		margin-right: auto;
+	}
+
+	.img-small:last-child {
+		margin-left: auto;
+	}
 }
