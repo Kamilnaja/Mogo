@@ -81,43 +81,43 @@ h2 {
 /* line 77, ../sass/screen.scss */
 .subheader {
   font: 6.5rem "Kaushan Script", italic;
-  color: white;
   margin-top: 170px;
+  color: white;
 }
 
 /* line 85, ../sass/screen.scss */
 .slogan {
   font: bold 7rem Montserrat, sans-serif;
+  line-height: .9;
   text-transform: uppercase;
   color: white;
-  line-height: 0.9;
 }
 
 /* line 94, ../sass/screen.scss */
 .white-line {
   width: 7%;
   height: 3px;
+  margin-top: 50px;
   color: white;
   border: 0 none;
   background-color: white;
-  margin-top: 50px;
 }
 
 /* line 104, ../sass/screen.scss */
 .btn-rectangle {
   font: bold 1.4rem Montserrat, sans-serif;
+  margin-top: 50px;
   padding: 10px 20px;
+  transition: .3s ease;
   text-transform: uppercase;
   color: white;
   border: 2px solid white;
   background: transparent;
-  transition: 0.3s ease;
-  margin-top: 50px;
 }
 /* line 117, ../sass/screen.scss */
 .btn-rectangle:hover {
-  border: 2px solid salmon;
   color: salmon;
+  border: 2px solid salmon;
 }
 
 /* line 123, ../sass/screen.scss */
@@ -153,139 +153,177 @@ h2 {
 /* line 155, ../sass/screen.scss */
 .h2-italic {
   font: 2.4rem "Kaushan Script", italic;
-  text-align: center;
   margin-top: 90px;
+  text-align: center;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .h3-bold {
   font: bold 3rem Montserrat, sans-serif;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .red-line {
   width: 7%;
   height: 3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: salmon;
   border: 0 none;
   background-color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
   background-color: salmon;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .roboto {
   font: 1.5rem Roboto, sans-serif;
-  color: #999999;
   text-align: center;
+  color: #999;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .img-small {
   height: 280px;
-  background-repeat: no-repeat;
   margin-top: 100px;
+  background-repeat: no-repeat;
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .img-small:first-child {
+  margin-right: 20px;
   background-image: url("../img/img-1.jpg");
   background-size: cover;
-  margin-right: 20px;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .img-small:nth-of-type(2) {
   background-image: url("../img/img-2.jpg");
   background-size: cover;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .img-small:last-child {
+  font: bold 1.8rem Montserrat, sans-serif;
+  margin-left: 20px;
+  padding-top: 100px;
+  color: white;
   background-image: url("../img/img-3.jpg");
   background-size: cover;
-  margin-left: 20px;
-  color: white;
-  font: bold 1.8rem Montserrat, sans-serif;
-  padding-top: 50px;
 }
-
-/* line 207, ../sass/screen.scss */
-.numbers {
-  background-color: #95e1d3;
-  margin-top: 50px;
-}
-
-/* line 211, ../sass/screen.scss */
-.bigger-number {
-  color: white;
-  font: bold 5rem Montserrat, sans-serif;
-  padding-top: 50px;
-  text-align: center;
-}
-
-/* line 217, ../sass/screen.scss */
-.sub-bigger-number {
-  color: white;
-  font: 1.4rem Montserrat, sans-serif;
-  text-align: center;
-  padding-bottom: 50px;
+/* line 219, ../sass/screen.scss */
+.img-small:last-child .glyphicon-user {
+  margin-bottom: 20px;
 }
 
 /* line 223, ../sass/screen.scss */
+.numbers {
+  margin-top: 100px;
+  background-color: #95e1d3;
+}
+
+/* line 229, ../sass/screen.scss */
+.bigger-number {
+  font: bold 5rem Montserrat, sans-serif;
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+/* line 239, ../sass/screen.scss */
+.sub-bigger-number {
+  font: 1.4rem Montserrat, sans-serif;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 250, ../sass/screen.scss */
 .grey {
   background-image: url("../img/grey.jpg");
   background-size: cover;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .img-center {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .mB-90 {
   margin-bottom: -90px;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .grey-2 {
   background-image: url("../img/grey2.png");
   background-size: cover;
 }
 
+/* line 270, ../sass/screen.scss */
+.services {
+  padding-bottom: 100px;
+}
+/* line 272, ../sass/screen.scss */
+.services h2 {
+  font: 1.4rem Montserrat, sans-serif;
+  text-transform: uppercase;
+  color: black;
+}
+/* line 278, ../sass/screen.scss */
+.services .service-p {
+  font: 1.5rem Roboto, sans-serif !important;
+  color: #999999;
+  margin-left: 51px;
+}
+/* line 283, ../sass/screen.scss */
+.services img {
+  float: left;
+  margin-right: 20px;
+}
+/* line 287, ../sass/screen.scss */
+.services .red-line {
+  margin-bottom: 60px;
+}
+
+/* line 291, ../sass/screen.scss */
+.our-service:last-child {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 20px;
+  padding-top: 40px;
+}
+
 @media (min-width: 1100px) {
-  /* line 241, ../sass/screen.scss */
+  /* line 299, ../sass/screen.scss */
   .container-fluid {
     padding-right: 100px;
     padding-left: 100px;
   }
 
-  /* line 246, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   .img-small {
     width: calc(33.333% - 20px);
   }
 }
 @media (max-width: 960px) {
-  /* line 251, ../sass/screen.scss */
+  /* line 311, ../sass/screen.scss */
   .img-small {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
     display: block;
     float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  /* line 259, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   .img-small:first-child {
     margin-right: auto;
   }
 
-  /* line 263, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   .img-small:last-child {
     margin-left: auto;
   }
