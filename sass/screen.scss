@@ -12,7 +12,8 @@ h2
 	margin-top: 0;
 	padding-top: 0;
 }
-.mT50 {
+.mT50
+{
 	margin-top: 50px !important;
 }
 .mT100
@@ -131,6 +132,8 @@ h2
 	font: 18px $mont;
 
 	margin-top: 150px;
+
+	cursor: pointer;
 
 	color: white;
 	& > div
@@ -274,27 +277,34 @@ h2
 }
 .grey-2
 {
+	padding-bottom: 50px;
+
 	background-image: url('../img/grey2.png');
 	background-attachment: fixed;
 	background-size: cover;
-	padding-bottom: 50px;
-	.red-line {
+	.red-line
+	{
 		margin-left: 0;
 	}
-	hr.first-line {
-		margin-left: auto;
+	hr.first-line
+	{
 		margin-right: auto;
 		margin-bottom: 50px;
+		margin-left: auto;
 	}
-	.red-line {
+	.red-line
+	{
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	img {
+	img
+	{
 		float: left;
+
 		margin-right: 20px;
 	}
-p {
+	p
+	{
 		margin-left: 130px !important;
 	}
 }
@@ -469,7 +479,6 @@ blockquote small:before
 		height: 400px;
 		margin-bottom: 32px;
 	}
-
 }
 
 .brands
@@ -542,34 +551,150 @@ blockquote small:before
 		margin-top: -30px;
 	}
 }
-.map {
-	background-image: url("../img/bottom.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+.map
+{
 	text-align: center;
-		span {
-			color: salmon;
-			font-size: 3.0rem;
-			padding-top: 80px;
-		}
-		p {
-			font: 2.4rem $mont;
-			text-transform: uppercase;
-			
-			
-			text-align: center;
-			color: salmon;
-		}
-			.red-line {
-				margin-bottom: 80px;
-		}
-}
-.blog {
-	img {
-		height: 200px;
+
+	background-image: url('../img/bottom.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	span
+	{
+		font-size: 3.0rem;
+
+		padding-top: 80px;
+
+		color: salmon;
 	}
+	p
+	{
+		font: 2.4rem $mont;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: salmon;
+	}
+	.red-line
+	{
+		margin-bottom: 80px;
+	}
+}
+.blog
+{
 	padding-bottom: 100px;
+	img
+	{
+		// height: 250px;
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+	.h2-blog
+	{
+		font: 1.4rem $mont;
+
+		position: relative;
+
+		margin-top: 20px;
+
+		text-transform: uppercase;
+	}
+	.p-blog
+	{
+		font: 1.5rem $roboto;
+
+		padding-bottom: 30px;
+
+		color: #999;
+		border-bottom: 1px solid lightgrey;
+	}
+	.spans
+	{
+		font: 1.5rem $roboto;
+
+		margin-top: 20px;
+
+		color: grey;
+	}
+	.spans > .glyphicon
+	{
+		margin-right: 5px;
+
+		color: #95e1d3;
+	}
+	.spans > .number
+	{
+		margin-right: 20px;
+	}
+	.calendar
+	{
+		position: absolute;
+		bottom: 170px;
+		left: 0;
+
+		width: 60px;
+		height: 70px;
+		padding-top: 10px;
+
+		text-align: center;
+
+		color: white;
+		background-color: #95e1d4;
+		.day
+		{
+			font: bold 2.0rem $roboto;
+		}
+		.month
+		{
+			font: italic 1.7rem $roboto;
+
+			display: block;
+
+			margin-bottom: 20px;
+		}
+	}
+}
+.site-footer {
+	background-color: #f8f8f8;
+	padding-top: 50px;
+	.footer-h2 {
+		font: bold 2.0rem $mont;
+		color: #cccccc;
+	}
+	.footer-p {
+		font: 1.5rem $roboto;
+		color: #999999;
+	}
+	.h2-blogs {
+		font: 1.4rem $mont;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	.followers {
+		font: 1.4rem $mont;
+	}
+}
+.posts {
+	height: 78px;
+	.post-title {
+		font: 1.2rem $mont;
+		text-transform: uppercase;
+		color: #333333;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.post-date {
+		font: italic 1.3rem $roboto;
+		color: #999999;
+		margin-left: 20px;
+	}
+	img {
+		float: left;
+		margin-right: 20px;
+		display: block;
+	}
 }
 // style warunkowe - nadaje odpowiedni padding na szerokim ekranie
 @media(min-width: 1100px)
@@ -607,5 +732,9 @@ blockquote small:before
 	.panel-default
 	{
 		margin-top: 40px;
+	}
+	.brands {
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 }
