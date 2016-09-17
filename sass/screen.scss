@@ -3,15 +3,12 @@ body
 {
   font-size: 62.5%;
 }
-
-
 h1,
 h2
 {
   margin-top: 0;
   padding-top: 0;
 }
-
 
 .mT50
 {
@@ -47,7 +44,7 @@ h2
 /* line 34, ../sass/screen.scss */
 .navbar-default .navbar-nav a:hover
 {
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid white;
 }
 
 /* line 38, ../sass/screen.scss */
@@ -69,14 +66,14 @@ h2
 /* line 51, ../sass/screen.scss */
 .container-fluid .navbar-nav .active a:hover
 {
-  color: yellow;
+  color: white;
 }
 
 /* line 56, ../sass/screen.scss */
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover
 {
-  color: yellow;
+  color: white;
 }
 
 /* line 61, ../sass/screen.scss */
@@ -92,7 +89,7 @@ h2
 }
 
 /* line 69, ../sass/screen.scss */
-.first
+.bg-first
 {
   padding-top: 30px;
 
@@ -172,6 +169,8 @@ h2
   cursor: pointer;
   p
   {
+    transition: .3s ease;
+
     color: white;
   }
   p:hover
@@ -400,9 +399,11 @@ p
   padding-bottom: 100px;
 }
 /* line 314, ../sass/screen.scss */
-.services h2
+.services h3
 {
   font: 1.4rem Montserrat, sans-serif;
+
+  margin-top: 0;
 
   text-transform: uppercase;
 
@@ -427,18 +428,17 @@ p
 /* line 336, ../sass/screen.scss */
 .services .spacer
 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 /* line 341, ../sass/screen.scss */
 .our-service:last-child
 {
   margin-top: 20px;
-  padding-top: 40px;
 }
 .our-service .col-md-4
 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* line 350, ../sass/screen.scss */
@@ -640,6 +640,11 @@ blockquote small:before
 
   color: white;
 }
+.gallery img
+{
+  // max-height: 220px;
+  margin-top: 20px;
+}
 .joshua
 {
   background-color: white;
@@ -803,6 +808,10 @@ blockquote small:before
 
   text-transform: uppercase;
 }
+.site-footer .col-md-4 ul
+{
+  list-style-type: none;
+}
 /* line 675, ../sass/screen.scss */
 .site-footer .followers
 {
@@ -826,12 +835,10 @@ blockquote small:before
 
   color: #333;
 }
-/* line 688, ../sass/screen.scss */
+
 .posts .post-date
 {
   font: italic 1.3rem Roboto, sans-serif;
-
-  margin-left: 20px;
 
   color: #999;
 }
@@ -843,9 +850,14 @@ blockquote small:before
 
   margin-right: 20px;
 }
-
+@media (min-width: 770px){
+  .gallery img {
+        max-height: 200px;
+  }
+}
 @media (min-width: 1100px)
 {
+
   /* line 702, ../sass/screen.scss */
   .container-fluid
   {
@@ -854,49 +866,63 @@ blockquote small:before
   }
 
   /* line 707, ../sass/screen.scss */
-  .img-small
-  {
-    width: calc(33.333% - 20px);
-  }
+
   .jump-top
   {
     position: fixed;
     z-index: 10;
-    bottom: 0;
     right: 104px;
+    bottom: 0;
 
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
 
-    border: 1px dashed #95e1d4;
-    background-color: white;
+    cursor: pointer;
     transition: 1s ease;
     animation-name: fall;
     animation-duration: 5s;
+    animation-play-state: running;
     animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-play-state: running;
     animation-direction: normal;
-    line-height: 150px;
     text-align: center;
-    cursor: pointer;
-    &:hover {
-      line-height: 70px;
+
+    border: 1px dashed #95e1d4;
+    background-color: white;
+    &:hover
+    {
+      padding-top: 0;
+
       background-color: salmon;
     }
-    &:hover span {
+    &:hover span
+    {
       color: white;
     }
-    span {
-      color: #95e1d4;
+    span
+    {
       font-size: 3.0rem;
+
+      color: #95e1d4;
     }
   }
 }
 
 @media (max-width: 960px)
-{
+{   
+
+  .bg-first {
+    padding-top: 0px;
+  }
+  .first-screen h2 {
+    margin-top: 20px;
+    font-size: 3.5rem;
+  }
+  .first-screen h3 {
+    font-size: 4.0rem;
+  }
   /* line 714, ../sass/screen.scss */
   .img-small
   {
@@ -960,7 +986,11 @@ blockquote small:before
   }
   .navbar-default .navbar-nav a:hover
   {
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid white !important;
+  }
+  .navbar-default .navbar-nav a
+  {
+    border-bottom: 2px solid transparent !important;
   }
   .navbar-default .navbar-nav a
   {
@@ -970,15 +1000,20 @@ blockquote small:before
     border-bottom: 2px;
   }
 }
-    @keyframes fall {
-      0% {
-        bottom: 0;
-      }
-      50% {
-        bottom: 20px;
-      }
+// 
+@keyframes fall
+{
+  0%
+  {
+    bottom: 0;
+  }
+  50%
+  {
+    bottom: 20px;
+  }
 
-      100% {
-        bottom: 0;
-      }
-    }
+  100%
+  {
+    bottom: 0;
+  }
+}
